@@ -1,0 +1,16 @@
+<body class="update">
+    <header>
+        <h1>Mettre à jour </h1>
+    </header>
+    
+    <section class="update-form">
+        <form action="/coaches/update/{{idCoach}}" method="POST">
+            <label>Biographie:</label><br>
+            <textarea name="biography">{{coach.biography}}</textarea>
+            <label>L'image:</label>
+            <input type="file" name="picture_path" value="{{coach.picture_path}}">
+            <button type="submit">Modifier</button>
+        </form>
+    </section>
+</body>
+</html>

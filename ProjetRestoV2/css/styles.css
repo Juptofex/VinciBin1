@@ -1,0 +1,599 @@
+*{
+
+    margin: auto;
+}
+
+body{
+    background-color: #10111efa;
+}
+
+/**********************************HEADER**************************************/
+
+body header div p{
+    text-align: center;
+    font-family: kaushanScript;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.885%; /* 103.108px */
+}
+
+body header div img{
+    width: 32%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav li{
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+}
+
+header nav li img{
+    margin: 0px;
+    width: 5%;
+}
+
+header nav li p{
+    text-align: center;
+    font-family: lobster;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.souligne{
+    margin-top: 0;
+    width: 201px;
+    height: 9px;
+    flex-shrink: 0;
+}
+
+/**********************************CENTER**************************************/
+
+/**********************************INDEX***************************************/
+
+.hat-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 551.75px;
+  height: 540.75px;
+  flex-shrink: 0;
+  display: block;
+  margin: auto;
+  transform: translateY(-60px);
+}
+
+/**********************************REVIEW**************************************/
+#enes{
+    background: linear-gradient(rgba(16, 17, 30), rgba(16, 17, 30, 0.4)), url(../img/background_avis.png);
+    background-size: cover;
+    background-position: center;
+  }
+  #enes .card-container {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    border-radius: 10px;
+  }
+
+  #enes .card-container::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #enes .card-container::-webkit-scrollbar-thumb {
+    background-color: #D4D4D4;
+    border-radius: 10px;
+  }
+
+  #enes .card-container::-webkit-scrollbar-track {
+    background-color: #10111e00;
+  }
+
+  #enes .card {
+    width: 536px;
+    height: 385px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    padding: 10px;
+    margin-right: 90px;
+    text-align: center;
+    display: inline-block;
+    background-color: #D9D9D9;
+  }
+
+  #enes .card .face{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #enes .card .caption .quote_image{
+    width: 38px;
+    height: 34.248px;
+    transform: translateY(-10px);
+    flex-shrink: 0;
+    background-color: #D9D9D9;
+  }
+  #enes .card .caption .quote_image_180{
+    width: 38px;
+    height: 34.248px;
+    flex-shrink: 0;
+    margin-top:15px;
+    transform: rotate(180deg);
+    background-color: #D9D9D9;
+  }
+
+  #enes .card .name {
+    margin-top: auto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    text-align: center;
+    font-family: Amaranth;
+    background-color: #D9D9D9;
+  }
+
+  #enes .card .quote {
+    width: 422px;
+    height: 113px;
+    font-size: 20px;
+    margin: auto;
+    font-family: Amaranth;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    background-color: #D9D9D9;
+  }
+  #enes .title_avis1{
+    color: #000;
+    font-family: Amaranth;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transform: translateY(-10px);
+  }
+
+  #enes .title_page{
+    margin-top: 150px;
+    width: 694px;
+    height: 158px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.9;
+  }
+
+  #enes .hat-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #enes .hat {
+    width: 186.343px;
+    height: 196px;
+    flex-shrink: 0;
+    display: block;
+    margin: auto;
+    transform: translateY(-60px);
+  }
+
+  #enes .left_line,
+  .right_line {
+    height: 4px;
+    flex-shrink: 0;
+    stroke-width: 4px;
+    stroke: #FFF;
+    position: absolute;
+    top: 50%;
+  }
+
+  #enes .left_line {
+    width: 207.495px;
+    transform: translateX(-170px) translateY(-50%);
+  }
+
+  #enes .right_line {
+    width: 207.495px;
+    transform: translateX(185px) translateY(-50%);
+  }
+
+  #enes .line-break{
+    margin-bottom: 40px;
+  }
+  #enes .line-break-2{
+    margin-bottom:150px;
+  }
+
+  #enes .form_avis {
+    width: 782.576px;
+    height: 1016.487px;
+    border-radius: 11px;
+    border: 9px solid rgba(255, 255, 255, 0.99) !important;
+    background: rgba(255, 255, 255, 0.57);
+    }
+
+  #enes .title_in_review{
+    color: #000;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-family: Convergence;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  #enes .input_name{
+    width: 394.151px;
+    height: 60.471px;
+    border-radius: 8px;
+    border: 5px solid #10111E;
+    background: rgba(228, 164, 164, 0.00);
+    font-size: 30px;
+    color: #ffffff;
+  }
+  #enes .input_name::placeholder {
+    color: black;
+  }
+  #enes .input_date{
+    width: 394.151px;
+    height: 60.471px;
+    border-radius: 8px;
+    border: 5px solid #10111E;
+    background: rgba(228, 164, 164, 0.00);
+    font-size: 30px;
+    color: #000000;
+
+  }
+
+  #enes .input_review{
+    width: 221.412px;
+    height: 52px;
+    border-radius: 8px;
+    border: 5px solid #10111E;
+    background: rgba(228, 164, 164, 0.00);
+    font-size: 30px;
+    color: #000000;
+  }
+  #enes .input_review option{
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #enes .input_message{
+    width: 681.413px;
+    height: 284.117px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 5px solid #10111E;
+    background: rgba(228, 164, 164, 0.00);
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  #enes .input_message::placeholder {
+    color: #000000;
+  }
+
+  #enes .submit_button {
+    width: 156.035px;
+    height: 57.591px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #10111E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Convergence;
+    font-size: 30px;
+    transform: translateY(15px);
+  }
+
+  #enes .google_form{
+    width: 644px;
+    height: 119px;
+    border-radius: 75px;
+    background: #D9D9D9;
+  }
+
+  #enes .google_form_text {
+    display: flex;
+    width: 562px;
+    height: 48px;
+    color: #000;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    top: 20px;
+    left: 35px;
+    margin: 0;
+  }
+
+  #enes .table-container{
+    margin-top: 75px;
+    width: 888px;
+    height: 230px;
+    border-radius: 31px;
+    background: #D9D9D9;
+  }
+
+  #enes .table-header{
+    width: 280px;
+    color: #10111E;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  #enes .table-content{
+    transform: translateY(15px);
+    color: #10111E;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  #enes .table-content-2{
+    transform: translateY(-7px);
+    color: #10111E;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  #enes .table-content-3{
+    transform: translateY(-7px);
+    color: #10111E;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  #enes .line_table-long, .line-table-short{
+    height: 4px;
+    flex-shrink: 0;
+    stroke-width: 4px;
+    stroke: #FFF;
+    position: absolute;
+    top: 50%;
+  }
+
+  #enes .line-table-long{
+    width: 783px;
+    transform: translateX(50px) translateY(-145px);
+  }
+
+  #enes .list-container{
+    margin-top: 75px;
+    width: 941.363px;
+    height: 219px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    border: 3px solid #10111E;
+    background: #D9D9D9;
+  }
+
+  #enes .top-tier{
+    width: 545px;
+    height: 43px;
+    color: #10111E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Amaranth;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  #enes .top-list{
+    padding-left: 120px;
+    list-style-type: disc;
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+
+  #enes .top-person{
+    width: 50%;
+    box-sizing: border-box;
+    color: #10111E;
+    font-family: Amaranth;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 9px;
+  }
+
+/**********************************REVIEW**************************************/
+/*********************************CONTACT**************************************/
+#image_fond_contact{
+  background-size: cover;
+  background-image: linear-gradient(rgba(16, 17, 30), rgba(16, 17, 30, 0.5)) ,url(/img/fond_avis.jpg)
+}
+
+.title1_contact {
+  font-family: montaguSlab;
+}
+
+.form1 {
+  margin-left: 20px;
+  border-radius: 47px;
+}
+
+.title2_contact {
+  font-family: newsreader;
+  font-size: larger;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  padding-right: 10px;
+}
+
+.paragraphe_contact {
+  margin: 0px;
+  font-family: newsreader;
+  font-size: larger;
+  padding-left: 10px;
+}
+
+#name {
+  width: 35%;
+}
+
+#button_contact {
+  border-radius: 40px;
+}
+
+#tr_contact {
+  border-bottom: 1px solid #ddd;
+}
+
+#list_contact {
+  list-style: none;
+}
+
+#tele_contact {
+  width: 20%;
+  height: auto;
+}
+
+/**********************************ABOUT_US**************************************/
+.image_font_about_us{
+    background-size:cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(16, 17, 30), rgba(16, 17, 30, 0.5)) ,url(/img/fond_apdn.png)
+
+  }
+  .list_about_us{
+    margin-left: 20px;
+  }
+  .sommaire{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  #history{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #form{
+    text-align: center;
+  }
+
+  .text_about_us{
+    font-size: 20px;
+    text-align: center;
+
+  }
+  .image_du_fonda{
+    margin-right: 40px;
+    width: 500px;
+    height: 435px;
+    flex-shrink: 0;
+    margin-left: 200px;
+    justify-content: center;
+  }
+  .texte_image{
+    width: 500px;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: -12px;
+  }
+  .choices_about_us{
+    display: inline;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .email{
+    width: 400px;
+    text-align: center;
+
+  }
+  .form_about_us{
+    margin-left: 500px;
+
+  }
+  .submit_about_us{
+    margin-left: 160px;
+  }
+
+  #table_about_us{
+    color: white;
+    caption-side: top;
+    border-bottom: 1px solid #ddd
+  }
+
+  .col_spacing_about_us{
+    padding-right: 30px;
+  }
+
+  /*********************************RESERVATION**************************************/
+
+  #body-reservation{
+    color: white;
+  }
+
+  #horaire{
+    border-collapse: separate;
+    border-spacing: 15px 5px;
+  }
+
+/*************************************FOOTER*****************************************/
+
+.footer {
+  position: absolute;
+  display: flex;
+}
+
+
+.testF{
+  text-align: right;
+}
+
+.links_footer {
+  display: inline-flex;
+}
+
+.links_footer a{
+  text-decoration: none;
+}

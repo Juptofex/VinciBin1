@@ -1,0 +1,35 @@
+<section class="courtList">
+    <div class="tableContent">
+        <h1>Liste des réservations : </h1>
+        <table class="courtTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>date de réservation</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each courtsBookings}}
+                <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{this.date_booking}} </a></td>
+                    <td>
+                        <form method="POST" action="/courts/unbook">
+                            <input type="hidden" name="courtBooking" value="{{this.date_booking}}">
+                            <input type="hidden" name="courtId" value="{{this.tennis_court_id}}">
+                            <input type="submit" value="Annuler">
+                        </form>
+                    </td>
+
+
+                </tr>
+                {{/each}}
+            </tbody>
+
+
+        </table>
+    </div>
+
+</section>

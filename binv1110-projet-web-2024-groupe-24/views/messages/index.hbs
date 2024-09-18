@@ -1,0 +1,26 @@
+<body class="wsh">
+    <section>
+        <h1>Vos Messages</h1>
+        <table class="messages-table">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>Message</th>
+                    <th>Réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each messages}}
+                <tr class="message">
+                    <td>{{this.firstname}} {{this.surname}}</td>
+                    <td>{{this.message_text}}</td>
+                    <td>
+                        <p class="reply">{{#if this.response_text}}{{this.response_text}}{{else}}Aucune réponse{{/if}}</p>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </section>
+</body>
+

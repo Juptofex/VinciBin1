@@ -1,0 +1,20 @@
+<section class="tournament-body">
+    <div class="tournament-colorW">
+        <h1 class="tournament-h1">Création d'un tournois :</h1>
+        <div id="tCreation-container">
+            <form id="tournament-creation" action="/tournaments/create" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <h4 id="form-error">{{form_error}}</h4>
+                    <label name="name">Nom du tournois :</label>
+                    <input name="name" type="text"> <br>
+                    <label name="date">Date du tournois :</label>
+                    <input name="date" type="date" min={{today}} value={{today}}> <br>
+                    <label name="maxPart">Nombre de participants maximum :</label>
+                    <input name="maxPart" type="number" min="1"> <br>
+                    <input name="tournamentPic" type="file"> <br><br>
+                    <input type="submit" value="Créer">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>

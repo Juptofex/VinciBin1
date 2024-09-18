@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chez Jean-Claude - Réservation</title>
+    <style>
+        @font-face {
+            font-family: kaushanScript;
+            src: url(font-family/kaushanScript-Regular.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: lobster;
+            src: url(font-family/lobster-Regular.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Amaranth';
+            src: url(font-family/Amaranth-Regular.ttf);
+            font-style: normal;
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Amaranth';
+            src: url(font-family/Amaranth-Italic.ttf);
+            font-style: italic;
+            font-weight: 400;
+        }
+        @font-face {
+        font-family: montaguSlab;
+        src: url(font-family/MontaguSlab-VariableFont_opsz\,wght.ttf);
+        font-style: normal;
+        }
+        @font-face {
+            font-family: newsreader;
+            src: url(font-family/Newsreader-VariableFont_opsz\,wght.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Convergence';
+            src: url(font-family/Convergence-Regular.ttf);
+            font-style: normal;
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Convergence';
+            src: url(font-family/Convergence-Italic.ttf);
+            font-style: italic;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<!-- Source for the imgs : Unsplash -->
+<body id="body-reservation">
+
+    <!-- Title and navbar -->
+    <header>
+
+        <!-- Title -->
+        <div>
+            <p style="font-size: 4vw;">Chez Jean-Claude</p>
+            <img src="img/souligne_de_titre.png" alt="souligneur de titre">
+        </div>
+
+        <!-- The navbar -->
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="index.html">Accueil</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="alexandre_taillet_entree.html">Menu</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="eros_villar_tavarez.html">Prix</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="enes_yumer.html">Avis</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="raffaele_hulot.html">Réservation</a>
+                        <img class="souligne" src="img/souligne_de_page.png " alt="souligneur de page">
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="emre_emin.html">A propos de nous</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="julien_damilot.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    <!-- End of the header -->
+    </header>
+
+    <!-- Main start -->
+    <main>
+        <div id="pseudo-main_res">
+        <section id="section_res">
+            <!-- Book a table online -->
+            <form class="form-res">
+                <fieldset>
+                    <legend> <h2>Réservation en ligne</h2> </legend>
+                    <input class="input_reservation reservation_see" type="number" placeholder="Pour combien de personnes?" min="1" required> <br>
+                    <input class="input_reservation reservation_see" type="text" placeholder="a quel nom?" pattern="(^[a-z]+)" required><br>
+                    <input class="reservation_see" type="date" min="2023-12-01" required>
+                    <input class="reservation_see" type="time" min="10:00" max="22:00" required><br>
+                    <input type="submit" value="reserver" id="decaler"><br>
+                    <blockquote id="reservation_text">Si vous préférez faire une réservation par <br> telephone cela est possible par le <br>numéro que vous trouverez <a href="contact_julien.html">ici</a>.<br>
+                    Toute annulation doit etre faite par telephone <br> et au moins 6 heures a l'avance. <br>
+                    Voici un lien vers <a href="https://calendar.google.com/calendar/u/0/r?pli=1">google calendar</a> <br>si vous le souhaiter.</blockquote>
+                </fieldset>
+            </form>
+        </section>
+        <div id="opposite">
+            <!-- Timetable of each day of the week -->
+            <table id="timetable">
+                <thead>
+                    <tr> 
+                        <th colspan="2">
+                            Heures d'ouvertures 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <th> Lundi: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr>
+                    <tr>
+                        <th> Mardi: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr>
+                    <tr>
+                        <th> Mercredi: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr>
+                    <tr>
+                        <th> Jeudi: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr>
+                    <tr>
+                        <th> Vendredi: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr>
+                    <tr>
+                        <th> Samedi: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr>
+                    <tr>
+                        <th> Dimanche: </th>
+                        <th> 10:00 - 22:00 </th>
+                    </tr> 
+                </tbody>
+            </table>
+        </div>
+        <!-- Days when the we're closed -->
+        <section id="resto_closed">
+            <h5 id="closed_title">Nous sommes férmer les dates suivantes:</h5>
+            <ul>
+                <li>Du 23 décembre au 1er janvier</li>
+                <li>Le 17 juin</li>
+                <li>Les jours férié</li>
+                <li>du 27 fevrier au 18 mars 2024 <br>&#x28;nous avons des travaux prévus&#x29;</li>
+            </ul>
+        </section>
+    </div>
+    </main>
+    <!-- Main end -->
+    <!-- Footer with miniature navbar -->
+    <footer class="footer">
+        <table style="width: 100%;">
+            <tr>
+                <td class="copyright_footer text-white" style="font-size: 1vw;">
+                    Chez Jean-Claude © All Rights Reserved
+                </td>
+
+                <!-- Names of the creators -->
+                <td class="name_footer text-white" style="font-size: 1vw;">
+                    Alexandre Taillet - Emre Emin - Enes Yumer <br> Eros Villar Tavarez - Julien Damilot - Raffaele Hulot
+                </td>
+
+                <!-- Miniature navbar -->
+                <td class="link_footer">
+                    <ul class="testF">
+                        <li class="links_footer">
+                        <p>
+                            <a class=" text-white" style="font-size: 1vw;" href="index.html">Accueil</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="alexandre_taillet_entree.html">Menu</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="eros_villar_tavarez.html">Prix</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="enes_yumer.html">Avis</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="raffaele_hulot.html">Réservation</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="emre_emin.html">A propos de nous</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="julien_damilot.html">Contact</a>
+                        </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    <!-- End of the footer -->
+    </footer>
+</body>
+</html>

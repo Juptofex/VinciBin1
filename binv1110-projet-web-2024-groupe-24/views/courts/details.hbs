@@ -1,0 +1,39 @@
+<section class="courtDetails">
+    <div class="detailsContainer">
+        <div class="detailsContent">
+            <div class="courtInfo">
+                <h1>Terrain : {{court.name}}</h1>
+                <img src="{{court.picture_path}}" class="imgCourt">
+                <div class="details">
+                    <ul>
+                        <li>Type de revêtement de sol : {{court.flooring_type}}</li>
+                        <li>Emplacement : {{court.location}}</li>
+                        {{#if session.user}}
+                        <h2>Réservations :</h2>
+                        <form method="POST" action="/courts/book">
+                            <input type="hidden" name="tennis_court_id" value="{{court.tennis_court_id}}">
+                            <table class="tableBooking">
+                                <tbody id="bookingDates">
+                                    {{#each bookingDates}}
+                                    <tr>
+                                        <td>
+                                            <label>{{this}} </label>
+                                        </td>
+                                        <td><button type="submit" name="dateCourtBooking"
+                                                value="{{this}}">Réserver</button></td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </form>
+                        {{#if error}}
+                        <p>Le terrain est occupé</p>
+                        {{/if}}
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

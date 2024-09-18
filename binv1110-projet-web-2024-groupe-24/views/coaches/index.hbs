@@ -1,0 +1,33 @@
+{{#if errors}}
+<section class="coachlist">
+  <div class="table-container">
+    {{#each errors}}
+    <h1>Erreurs : {{this.msg}}</h1>
+    {{/each}}
+  </div>
+</section>
+{{else}}
+<section class="coachlist">
+  <div class="table-container">
+    <h2> Listes des coachs  :</h2>
+    <table class="tableau-style">
+      <thead>
+        <tr>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each coachList}}
+        <tr>
+          <td><a href="/coaches/biopage?coach={{user_id}}" class="link">{{firstname}}</a></td>
+          <td>{{surname}}</td>
+          <td>{{email}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</section>
+{{/if}}

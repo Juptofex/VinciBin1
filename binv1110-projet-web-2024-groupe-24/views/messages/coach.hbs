@@ -1,0 +1,13 @@
+<body class="wsh">
+<h1>Messages </h1>
+{{#each messages}}
+    <div class="message">
+        <p><strong>Utilisateur : </strong> {{this.firstname}} {{this.surname}} ({{this.date_hour_message}}): {{this.message_text}}</p>
+        <form action="/messages/reply/{{this.message_id}}" method="post">
+            <textarea name="reply" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+{{/each}}
+</body>
+

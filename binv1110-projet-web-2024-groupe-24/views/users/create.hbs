@@ -1,0 +1,45 @@
+<section id="user-body">
+    <div id="user-holder">
+        <h1>S'enregistrer</h1>
+        <div id="user-container">
+            <form method="post" action="/users/create">
+                <fieldset>
+                    <div>
+                        <label for="firstname">Prénom: </label>
+                        <input type="text" name="firstname" />
+                    </div>
+                    <div>
+                        <label for="surname">Nom: </label>
+                        <input type="text" name="surname" />
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" />
+                    </div>
+                    <div>
+                        <label for="password">Mot de passe: </label>
+                        <input type="password" name="password" />
+                    </div>
+                    <div>
+                        <label for="password_conf">Confirmation du mot de passe: </label>
+                        <input type="password" name="password_conf" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Register">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <br>
+    {{#if (eq errors null)}}
+    {{else}}
+        <table class="user-errors">
+            {{#each errors}}
+                <tr>
+                    <td>{{this}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    {{/if}}
+</section>

@@ -1,0 +1,34 @@
+<section>
+    <div class="tournament-body">
+        <div class="tournament-header">
+            <h1>{{details.name}}</h1>
+        </div>
+        <div class="tournament-details">
+            <p><strong>Créateur:</strong> {{findCreator details.creator}}</p>
+            <p><strong>Date:</strong> {{details.date_tournament}}</p>
+            <p><strong>Nombre de participants actuels:</strong> {{current_participant_amount}}</p>
+            <p><strong>Nombre max de participants:</strong> {{details.nb_max_participants}}</p>
+            <div class="banner-image">
+                <img src="{{details.banner_image_path}}" alt="Banner Image">
+            </div>
+        </div>
+        {{#if session.user}}
+            {{#if not_too_old}}
+                {{#if tournament_participant_ok}}
+                    <div id="tournament-buttons">
+                        {{#if registered.count}}
+                            <form class="subscribe-buttons" method="post" action="/tournaments/unregister?id={{details.tournament_id}}">
+                                <input name="unsubscribe" type="submit" value="Se désinscrire">
+                            </form>
+                        {{else}}
+                            <form class="subscribe-buttons" method="post" action="/tournaments/register?id={{details.tournament_id}}">
+                                <input name="subscribe" type="submit" value="S'inscrire">
+                            </form>
+                        {{/if}}
+                    </div>
+                {{/if}}
+            {{/if}}
+        {{/if}} 
+    </div>
+    
+</section>

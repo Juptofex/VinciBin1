@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Site</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body id="body">
+    <header class="header">
+        <nav>
+            <ul class="inline-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/tournaments">Liste des tournois</a></li>
+                {{#if (eq session.user.status "coach")}}
+                <li><a href="/tournaments/create">Création de tournois</a></li>
+                {{/if}}
+                <li><a href="/courts">Liste des terrains</a></li>
+                {{#if session.user}}
+                    <li><a href="/courts/bookings">Réservation de terrains</a></li>
+                {{/if}}
+                <li><a href="/coaches">Liste des entraineurs</a></li>
+                {{#if session.user}}
+                    <li><a href="/messages">Messagerie</a></li>
+                {{/if}}
+            </ul>
+            <div class="auth-links">
+                {{#if session.user}}
+                    <a href="/users/logout">Logout</a>
+                {{else}}
+                    <a href="/users/login">Log in</a>
+                    <a href="/users/create">Register</a>
+                {{/if}}
+            </div>
+        </nav>
+    </header>
+        {{{body}}}
+    <footer>
+    </footer>
+</body>
+
+</html>

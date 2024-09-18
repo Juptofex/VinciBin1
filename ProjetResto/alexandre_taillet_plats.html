@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Menu - Plats</title>
+    <style>
+        /* Adding new font-family */
+        @font-face {
+            font-family: kaushanScript;
+            src: url(font-family/kaushanScript-Regular.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: lobster;
+            src: url(font-family/lobster-Regular.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: montaguSlab;
+            src: url(font-family/MontaguSlab-VariableFont_opsz\,wght.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: newsreader;
+            src: url(font-family/Newsreader-VariableFont_opsz\,wght.ttf);
+            font-style: normal;
+        }
+    </style>
+    <!-- Source for the imgs : Pixabay -->
+
+
+<body>
+<!-- Title and navbar -->
+<header>
+
+    <!-- Title -->
+    <div>
+        <p style="font-size: 4vw;">Chez Jean-Claude</p>
+        <img src="img/souligne_de_titre.png" alt="souligneur de titre">
+    </div>
+
+    <!-- The navbar -->
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="index.html">Accueil</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="alexandre_taillet_entree.html">Menu</a>
+                    <img class="souligne" src="img/souligne_de_page.png " alt="souligneur de page">  
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="eros_villar_tavarez.html">Prix</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="enes_yumer.html">Avis</a>  
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="raffaele_hulot.html">Réservation</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="emre_emin.html">A propos de nous</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="julien_damilot.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                </p>
+            </li>
+        </ul>
+    </nav>
+<!-- End of the header -->
+</header>
+
+    <div class="menuSubBody">
+        <div class="subBackground">
+            <div class="flex-row d-flex">
+                <div class="attachRopeLeft"></div>
+                <div class="attachRopeRight"></div>
+            </div>
+                <ul class="nav nav-tabs menuList">
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="alexandre_taillet_entree.html">Entrées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active bg-dark text-white" aria-current="page" href="alexandre_taillet_plats.html">Plats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="alexandre_taillet_desserts.html">Desserts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="alexandre_taillet_boissons.html">Boissons</a>
+                    </li>
+                </ul>
+            <h2 class="text-center text-white">↬ Plats phares ↫</h2>
+            <div class="flex-row d-flex h-25 flagshipDish">
+               <div class="flex-column">
+                   <h1>Lasagne</h1>
+                   <p>Un incontournable de la gastronomie Italiene. Contient de la <br> viande de porc/boeuf dans son ragoût de tomates, mozzarella, <br> feuilles de lasagnes.</p>
+               </div>
+                <img src="/img/menu_ita.jpg" class="img-fluid rounded-4" alt="Lasagne plats">
+            </div>
+            <div class="flex-row d-flex h-25 flagshipDish">
+                <div class="flex-column">
+                    <h1>Fondue</h1>
+                    <p> Pour se réchauffer en période hyvernale aux montagnes Suisses.<br> Contient fromage et vin blanc. Assortiment avec pain, pomme de terre, charcuterie.</p>
+                </div>
+                <img src="/img/menu-fondue.png" class="img-fluid rounded-4" alt="Fondue plats">
+            </div>
+                <div>
+                    <h3 class="text-center text-light">Plats</h3>
+                    <table class="menuTable">
+                        <thead>
+                            <tr>
+                                <th style="text-decoration: underline">Plats</th>
+                                <th style="text-decoration: underline">Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody style="padding-right: 20px">
+                            <tr>
+                                <td>Lasagne</td>
+                                <td>23,53€</td>
+                            </tr>
+                            <tr>
+                                <td>Fondue pour 2</td>
+                                <td>50,23€</td>
+                            </tr>
+                            <tr>
+                                <td>Fondue pour 4</td>
+                                <td>84,34€</td>
+                            </tr>
+                            <tr>
+                                <td>Homard deluxe</td>
+                                <td>76,98€</td>
+                            </tr>
+                            <tr>
+                                <td>Poutine du chef québécois</td>
+                                <td>16,62€</td>
+                            </tr>
+                            <tr>
+                                <td>Sushis du chef Japonais</td>
+                                <td>4,12€/1pc</td>
+                            </tr>
+                           <tr>
+                               <td>Paella</td>
+                               <td>34,23€</td>
+                           </tr>
+                        </tbody>
+                    </table>
+        </div>
+            <div class="center rounded-4 suggestion d-block">
+                <form>
+                    <h3 class="text-center">Suggestions de nouveaux plats ?</h3>
+                    <div class="centerTest">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email">
+                        <label for="suggestion">Suggestion</label>
+                        <textarea id="suggestion" name="suggestion" placeholder="Votre suggestion" style="height:50px"></textarea>
+                        <input type="submit" value="Envoyer">
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- Footer with miniature navbar -->
+            <footer class="footer">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="copyright_footer text-white" style="font-size: 1vw;">
+                            Chez Jean-Claude © All Rights Reserved
+                        </td>
+
+                        <!-- Names of the creators -->
+                        <td class="name_footer text-white" style="font-size: 1vw;">
+                            Alexandre Taillet - Emre Emin - Enes Yumer <br> Eros Villar Tavarez - Julien Damilot - Raffaele Hulot
+                        </td>
+
+                        <!-- Miniature navbar -->
+                        <td class="link_footer">
+                            <ul class="testF">
+                                <li class="links_footer">
+                                <p>
+                                    <a class=" text-white" style="font-size: 1vw;" href="index.html">Accueil</a>
+                                </p>
+                                </li>
+                                <li class="links_footer">
+                                <p>
+                                    <a class="text-white"  style="font-size: 1vw;" href="alexandre_taillet_entree.html">Menu</a>
+                                </p>
+                                </li>
+                                <li class="links_footer">
+                                <p>
+                                    <a class="text-white"  style="font-size: 1vw;" href="eros_villar_tavarez.html">Prix</a>
+                                </p>
+                                </li>
+                                <li class="links_footer">
+                                <p>
+                                    <a class="text-white"  style="font-size: 1vw;" href="enes_yumer.html">Avis</a>
+                                </p>
+                                </li>
+                                <li class="links_footer">
+                                <p>
+                                    <a class="text-white"  style="font-size: 1vw;" href="raffaele_hulot.html">Réservation</a>
+                                </p>
+                                </li>
+                                <li class="links_footer">
+                                <p>
+                                    <a class="text-white"  style="font-size: 1vw;" href="emre_emin.html">A propos de nous</a>
+                                </p>
+                                </li>
+                                <li class="links_footer">
+                                <p>
+                                    <a class="text-white"  style="font-size: 1vw;" href="julien_damilot.html">Contact</a>
+                                </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            <!-- End of the footer -->
+            </footer>
+        </div>
+    </div>
+    </body>
+    </html>

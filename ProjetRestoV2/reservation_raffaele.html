@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chez Jean-Claude - réservation</title>
+    <style>
+        @font-face {
+        font-family: kaushanScript;
+        src: url(font-family/kaushanScript-Regular.ttf);
+        font-style: normal;
+        }
+        @font-face {
+            font-family: lobster;
+            src: url(font-family/lobster-Regular.ttf);
+            font-style: normal;
+        }
+    </style>
+</head>
+<body id="body-reservation">
+    <header>
+        <div class="text-white text-center">
+            <p class="text-white" style="font-size: 4vw;">Chez Jean-Claude</p>
+            <img src="img/souligne_de_titre.png" alt="souligneur de titre">
+        </div>
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="accueil.html">Accueil</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="menu">Menu</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="prix">Prix</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="avis_enes.html">Avis</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="reservation_raffaele.html">Réservation</a>
+                        <img class="souligne" src="img/souligne_de_page.png " alt="souligneur de page">
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="apdn_emre.html">A propos de nous</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 3vw;">
+                        <a class="nav-link text-white" href="contact_julien.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="to_be_done" method="get" class="form1">
+                <h2> Réservation en ligne </h2>
+                <fieldset> 
+                    <input type="number" placeholder="Pour combien de personnes?" min="1" required>
+                    <input type="text" placeholder="a quel nom?" pattern="(^[a-z]+)" required>
+                    <input type="date" required>
+                    <input type="time" min="10:00" max="22:00" step="900" required>
+                    <input type="submit" value="reserver">
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <table id="horaire">
+                <tr> <th colspan="2"> Heures d'ouvertures </th></tr>
+                <tr>
+                    <th> Lundi: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+                <tr>
+                    <th> Mardi: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+                <tr>
+                    <th> Mercredi: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+                <tr>
+                    <th> Jeudi: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+                <tr>
+                    <th> Vendredi: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+                <tr>
+                    <th> Samedi: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+                <tr>
+                    <th> Dimanche: </th>
+                    <th> 10:00 - 22:00 </th>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

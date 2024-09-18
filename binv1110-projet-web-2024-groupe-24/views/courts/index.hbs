@@ -1,0 +1,48 @@
+{{#if errorss}}
+<section class="courtList">
+    <div class="detailsContent">
+        {{#each errorss}}
+        <h1>{{this.msg}}</h1>
+        {{/each}}
+    </div>
+</section>
+{{else}}
+<section class="courtList">
+    <div class="tableContent">
+        <h1>Liste des terrains : </h1>
+        <table class="courtTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Type de revêtement de sol</th>
+                    {{#if updateTrue}}
+                    <th>Modifier</th>
+                    {{/if}}
+
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each courtsTable}}
+                <tr>
+                    <td><a href="http://localhost:3000/courts/details?id={{this.tennis_court_id}}"> {{this.name}} </a>
+                    </td>
+                    <td>{{this.flooring_type}} </a></td>
+                    {{#if ../updateTrue}}
+                    <td>
+                        <form method="get" action="/courts/update">
+                            <input type="hidden" name="id" value="{{this.tennis_court_id}}">
+                            <input type="submit" value="Mettre à jour">
+                        </form>
+                    </td>
+                    {{/if}}
+                </tr>
+                {{/each}}
+            </tbody>
+
+
+        </table>
+    </div>
+
+</section>
+{{/if}}

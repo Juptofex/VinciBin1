@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chez Jean-Claude - Contact</title>
+    <style>
+    /* Adding new font-family */
+    @font-face {
+        font-family: kaushanScript;
+        src: url(font-family/kaushanScript-Regular.ttf);
+        font-style: normal;
+    }
+    @font-face {
+        font-family: lobster;
+        src: url(font-family/lobster-Regular.ttf);
+        font-style: normal;
+    }
+    @font-face {
+        font-family: montaguSlab;
+        src: url(font-family/MontaguSlab-VariableFont_opsz\,wght.ttf);
+        font-style: normal;
+    }
+    @font-face {
+        font-family: newsreader;
+        src: url(font-family/Newsreader-VariableFont_opsz\,wght.ttf);
+        font-style: normal;
+    }
+    </style>
+<!-- Source for the imgs : Pixabay -->
+<body id="image_fond_contact">
+
+    <!-- Title and navbar -->
+    <header>
+
+        <!-- Title -->
+        <div>
+            <p style="font-size: 4vw;">Chez Jean-Claude</p>
+            <img src="img/souligne_de_titre.png" alt="souligneur de titre">
+        </div>
+
+        <!-- The navbar -->
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="index.html">Accueil</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="alexandre_taillet_entree.html">Menu</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="eros_villar_tavarez.html">Prix</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="enes_yumer.html">Avis</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="raffaele_hulot.html">Réservation</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="emre_emin.html">A propos de nous</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="julien_damilot.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                        <img class="souligne" src="img/souligne_de_page.png " alt="souligneur de page">
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    <!-- End of the header -->
+    </header>
+
+    <!-- Main content of the page -->
+    <main class="container mt-5">
+        <div class="row">
+
+            <!-- Form to contact the restaurant owner -->
+            <section class="m-5 col-sm-6">
+                <h2 class="title1_contact text-white mb-3 container-fluid" style="font-size: 2vw;">Nous contacter</h2>
+                <form class="form1 border p-5" method="post" action="mailto:julien.damilot@student.vinci.be" enctype="text/plain">
+                    <fieldset>
+                        <ul id="list_contact">
+                            <li><input class="form-control mb-3" type="text" id="name" name="name" placeholder="Nom"></li>
+                            <li><input class="form-control mb-3" type="email" id="e-mail" name="mail" placeholder="E-mail" pattern="(^[a-z0-9.]+)@([a-z0-9])+(\.)([a-z]{2,4})"></li>
+                            <li><textarea class="form-control mb-3" cols="100" rows="5" placeholder="Mon message..." name="comment"></textarea></li>
+                            <li><input class="btn btn-light" type="submit" value="Envoyer"></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Informations on the restaurant -->
+            <section class="m-5 text-white col-sm-4">
+                <h2 class="title1_contact" style="font-size: 2vw;">Infos</h2>
+                <table class="mt-5">
+                    <tr id="tr_contact">
+                        <th class="title2_contact" style="font-size: 1vw;">Adresse :</th>
+                        <td class="paragraphe_contact" style="font-size: 1vw;">Clos Chapelle-aux-Champs 43</td>
+                    </tr>
+                    <tr style="height:30px">
+                        <th class="title2_contact" style="font-size: 1vw;">Numéro de téléphone :</th>
+                        <td class="paragraphe_contact" style="font-size: 1vw;">+32 2 761 06 08 <img src="img/Icone_tele.png" width="20" height="20" alt="icone de téléphone"></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <!-- Interactive map of the restaurant's address -->
+        <div class="row justify-content-center">
+            <div class="m-5 col-sm-7">
+                <a  class="text-white" id="map_contact" style="font-size: 2vw;" href="https://www.google.com/maps?ll=50.849505,4.451088&z=16&t=m&hl=fr&gl=BE&mapclient=embed&q=Clos+Chapelle-aux-Champs+43+1200+Woluwe-Saint-Lambert">Plan</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0094994163637!2d4.448512776788055!3d50.84950835855057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc847580c1ef%3A0x5e73e51036fd3fca!2sClos%20Chapelle-aux-Champs%2043%2C%201200%20Woluwe-Saint-Lambert!5e0!3m2!1sfr!2sbe!4v1700244835317!5m2!1sfr!2sbe" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="m-3"></iframe>
+            </div>
+        </div>
+    <!-- End of the main content -->
+    </main>
+
+    <!-- Footer with miniature navbar -->
+    <footer class="footer">
+        <table style="width: 100%;">
+            <tr>
+                <td class="copyright_footer text-white" style="font-size: 1vw;">
+                    Chez Jean-Claude © All Rights Reserved
+                </td>
+
+                <!-- Names of the creators -->
+                <td class="name_footer text-white" style="font-size: 1vw;">
+                    Alexandre Taillet - Emre Emin - Enes Yumer <br> Eros Villar Tavarez - Julien Damilot - Raffaele Hulot
+                </td>
+
+                <!-- Miniature navbar -->
+                <td class="link_footer">
+                    <ul class="testF">
+                        <li class="links_footer">
+                        <p>
+                            <a class=" text-white" style="font-size: 1vw;" href="index.html">Accueil</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="alexandre_taillet_entree.html">Menu</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="eros_villar_tavarez.html">Prix</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="enes_yumer.html">Avis</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="raffaele_hulot.html">Réservation</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="emre_emin.html">A propos de nous</a>
+                        </p>
+                        </li>
+                        <li class="links_footer">
+                        <p>
+                            <a class="text-white"  style="font-size: 1vw;" href="julien_damilot.html">Contact</a>
+                        </p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    <!-- End of the footer -->
+    </footer>  
+</body>
+</html>

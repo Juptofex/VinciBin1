@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="EMIN Emre">
+    <title>Chez Jean-Claude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @font-face {
+            font-family: kaushanScript;
+            src: url(font-family/kaushanScript-Regular.ttf);
+            font-style: normal;
+        }
+        @font-face {
+            font-family: lobster;
+            src: url(font-family/lobster-Regular.ttf);
+            font-style: normal;
+        }
+        @font-face {
+          font-family: 'Amaranth';
+          src: url(font-family/Amaranth-Regular.ttf);
+          font-style: normal;
+          font-weight: 400;
+        }
+        @font-face {
+          font-family: 'Amaranth';
+          src: url(font-family/Amaranth-Italic.ttf);
+          font-style: italic;
+          font-weight: 400;
+        }
+        
+          
+        </style>
+</head>
+<body class="text-white image_font_about_us">
+    <header>
+        <div class="text-white text-center">
+            <p class="text-white" style="font-size: 4vw;">Chez Jean-Claude</p>
+            <img src="img/souligne_de_titre.png" alt="souligneur de titre">
+        </div>
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="accueil.html">Accueil</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="menu">Menu</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="prix">Prix</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="avis_enes.html">Avis</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="reservation_raffaele.html">Réservation</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="apdn_emre.html">A propos de nous</a>
+                        <img class="souligne" src="img/souligne_de_page.png " alt="souligneur de page">
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="contact_julien.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class=" text-center">À propos  de nous </h2>
+        <p class="text_about_us">Fondé en 1950 par Jean-Claude, “Chez Jean-Claude” est un restaurant familial qui a comme but de proposer des plats divinements bons. </p>
+        <ul class="list_about_us">
+            <li>
+                <a class="sommaire" href="#history"> Histoire </a>
+            </li>
+            <li> 
+                <a class="sommaire" href="#form"> Formulaire </a>
+            </li>
+            <li>
+                <a class="sommaire" href="#table_about_us"> Evenements marquants </a>
+            </li>
+        </ul>
+        <hr>
+        <section class="row">
+            <h2 id="history">Histoire</h2>
+            <img class="col-auto image_du_fonda" src="img/serveur_apdn.png" alt="image du fondateur (Benjamin)">
+            <p class="col-auto texte_image"> Le restaurant a été fondé en hommage à Jean-Claude qui périt lors de la seconde guerre mondiale. Se souvenant du plus grand rêve de son père et de ses paroles, Benjamin fonda le restaurant pour qu’il soit comme dans le rêve de Jean-Claude.
+            </p>
+        </section>
+        <hr> <br>
+        <div>
+            <h6 id="form"> Nous allons bientôt organiser un évenement mais nous hésitons entre un buffet à volonté et un concert avec un groupe local, pourriez-vous nous aider à faire un choix ?</h6>
+            <p class="text-center"> PS : Vous recevrez un mail pour connaître l'évenement gagnant </p> <br>
+            <form>
+                <fieldset class="form_about_us">
+                    <input required class="choices_about_us" type="radio" name="choix" value="choix1"/> Buffet à volonté 
+                    <input required class="choices_about_us" type="radio" name="choix" value="choix2"/> Concert
+                    <input required class="form-control mb-3 email" type="email" id="e-mail" placeholder="E-mail" pattern="(^[a-z0-9.]+)@([a-z0-9])+(\.)([a-z]{2,4})">
+
+                    <input class="submit_about_us" type = "submit" value = "soumettre" />
+                </fieldset>
+            </form>
+        </div> <br>
+        <hr>    
+        <table class="table_date">
+            <caption id="table_about_us"> Quelques évenements marquants </caption>
+            
+            <tr>
+                <th class="col_spacing_about_us">1950 </th>
+                <td>Fondation du restaurant</td>
+
+             </tr>
+             <tr>
+                 <th>1991 </th>
+                 <td>Premier étoile michelin </td>
+
+             </tr>
+             <tr>
+                 <th>2000</th>
+                 <td>Décès du fondateur</td>
+             </tr>
+             <tr>
+                <th>2004</th>
+                <td>Prix du mu meilleur restaurant bruxellois</td>
+             </tr>
+             <tr>
+             <th>2008</th>
+             <td>Agrandissement du restaurant</td>
+             </tr>
+             <tr>
+                <th>2016</th>
+                <td>Deuxième étoile michelin</td>
+             </tr>
+             <tr>
+                <th>...</th>
+                //TODO<td class>Pour + d'évenement, appuyez ici.</td>
+             </tr>
+        </tbody>
+        </table>
+        
+    </main>
+</body>
+</html>

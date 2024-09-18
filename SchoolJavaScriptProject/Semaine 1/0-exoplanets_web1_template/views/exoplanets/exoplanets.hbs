@@ -1,0 +1,111 @@
+<section>
+    <br>
+    <h1> Liste des Exoplanète découverte</h1>
+    <h2>Filtre :</h2>
+    <br>
+    <div id="filter">
+        <form method="POST" action="/exoplanets/filter/hclass">
+            <select class="hClass" name="hClassFilter">
+                <option value="Mésoplanète">Mésoplanète</option>
+                <option value="Psychroplanète">Psychroplanète</option>
+                <option value="Thermoplanète">Thermoplanète</option>
+                <option value="Non habitable">Non habitable</option>
+            </select>
+            <input type="submit" value="Filtrer par hclass">
+        </form>
+        <form method="POST" action="/exoplanets/filter/year">
+            <input type="number" name="yearFilter" min="1990" max="2024">
+            <input type="submit" value="Filtrer par année">
+        </form>
+    </div>
+    <br>
+     {{#if details}}
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Exoplanète</th>
+                    <th>Nom Exoplanète</th>
+                    <th>hClass</th>
+                    <th>Année de découverte</th>
+                    <th>IST</th>
+                    <th>pClass</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{details.id}}</td>
+                    <td>{{details.name}}</td>
+                    <td>{{details.hClass}}</td>
+                    <td>{{details.year}}</td>
+                    <td>{{details.IST}}</td>
+                    <td>{{details.pClass}}</td>
+                </tr>
+            </tbody>
+        </table>
+    {{else}}
+        <table>
+            <thead>
+                <tr>
+                    <th>Id Exoplanète</th>
+                    <th>Nom Exoplanète</th>
+                    <th>hClass</th>
+                    <th>Année de découverte</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each listeExoplanetes}}
+                    <tr>
+                        <td>{{this.id}}</td>
+                        <td><a href="/exoplanets/details?id={{this.id}}">{{this.name}}</a></td>
+                        <td>{{this.hClass}}</td>
+                        <td>{{this.year}}</td>
+                        <td><img src="/images/{{this.imageEx}}" alt="image of the exoplanet"</td>
+                        <td><form method="POST" action="/exoplanets/delete">
+                            <input type="hidden" name="id" value="{{this.id}}">
+                            <input type="submit" value="Supprimer">
+                        </form></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <br>
+        <form action="/exoplanets/add" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <h1>Ajouter une Exoplanète découverte</h1>
+                <label>Nom de l'exoplanète découverte</label>
+                <input type="text" name="name">
+                <label>hClass</label>
+                <select class="hClass" name="hClass">
+                    <option value="Mésoplanète">Mésoplanète</option>
+                    <option value="Psychroplanète">Psychroplanète</option>
+                    <option value="Thermoplanète">Thermoplanète</option>
+                    <option value="Non habitable">Non habitable</option>
+                </select>
+                <label>Année de découverte</label>
+                <input type="number" name="year" min="1990" max="2024">
+                <label>Image de l'exoplanète</label>
+                <input name="imageEx" type="file">
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+        <br>
+        
+        <form action="/exoplanets/search" method="get">
+            <fieldset>
+                <h1> Recherche d'une Exoplanète déjà découverte </h1>
+                <input type="text" minlength="3"  name="name">
+                <input type="submit" value="Rechercher">
+            </fieldset>
+        </form>
+        {{#exists erM}}
+            <p>{{erM}}</p>
+        {{/exists}}
+    {{/if}}
+
+    {{#exists errors}}
+        <br>
+        <p class="errors">{{errors}}</p>
+    {{/exists}}
+</section>

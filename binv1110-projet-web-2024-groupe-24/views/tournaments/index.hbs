@@ -1,0 +1,20 @@
+<section class="tournament-body">
+    <h1 class="tournament-h1">Tournois :</h1>
+    <div class="tournament-list">
+        {{#each tournaments_list}}
+            <div class="tournament">
+                <div class="tournament-header">
+                    <h3><a href="/tournaments/details?id={{this.tournament_id}}">{{this.name}}</a></h3>
+                </div>
+                <div class="tournament-details">
+                    <p><strong>Créateur:</strong> {{findCreator this.creator}}</p>
+                    <p><strong>Date:</strong> {{this.date_tournament}}</p>
+                    <p><strong>Nombre max de participants:</strong> {{this.nb_max_participants}}</p>
+                    <div class="banner-image">
+                        <img src="{{this.banner_image_path}}" alt="Banner Image">
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</section>

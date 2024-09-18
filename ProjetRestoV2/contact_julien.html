@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact</title>
+    <style>
+    /* Adding new font-family */
+    @font-face {
+        font-family: kaushanScript;
+        src: url(font-family/kaushanScript-Regular.ttf);
+        font-style: normal;
+    }
+    @font-face {
+        font-family: lobster;
+        src: url(font-family/lobster-Regular.ttf);
+        font-style: normal;
+    }
+    @font-face {
+        font-family: montaguSlab;
+        src: url(font-family/MontaguSlab-VariableFont_opsz\,wght.ttf);
+        font-style: normal;
+    }
+    @font-face {
+        font-family: newsreader;
+        src: url(font-family/Newsreader-VariableFont_opsz\,wght.ttf);
+        font-style: normal;
+    }
+    </style>
+</head>
+<body id="image_fond_contact">
+    <header>
+        <div class="text-white text-center">
+            <p class="text-white" style="font-size: 4vw;">Chez Jean-Claude</p>
+            <img src="img/souligne_de_titre.png" alt="souligneur de titre">
+        </div>
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="accueil.html">Accueil</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="menu.html">Menu</a>  
+                    </p>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="prix_eros.html">Prix</a>
+                    </p>
+                </li>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="avis_enes.html">Avis</a>  
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="reservation_raffaele.html">Réservation</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="apdn_emre.html">A propos de nous</a>
+                    </p>
+                </li>
+                <li class="navbar-item">
+                    <p style="font-size: 2vw;">
+                        <a class="nav-link text-white" href="contact_julien.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                        <img class="souligne" src="img/souligne_de_page.png " alt="souligneur de page">
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container mt-5">
+        <div class="row">
+            <section class="m-5 col-sm-6">
+                <h2 class="title1_contact text-white mb-3 container-fluid" style="font-size: 2vw;">Nous contacter</h2>
+                <form class="form1 border p-5" method="post" action="mailto:julien.damilot@student.vinci.be" enctype="text/plain">
+                    <fieldset>
+                        <ul id="list_contact">
+                            <li><input class="form-control mb-3" type="text" id="name" name="name" placeholder="Nom"></li>
+                            <li><input class="form-control mb-3" type="email" id="e-mail" name="mail" placeholder="E-mail" pattern="(^[a-z0-9.]+)@([a-z0-9])+(\.)([a-z]{2,4})"></li>
+                            <li><textarea class="form-control mb-3" cols="100" rows="5" placeholder="Mon message..." name="comment"></textarea></li>
+                            <li><input class="btn btn-light" type="submit" value="Envoyer"></li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="m-5 text-white col-sm-4">
+                <h2 class="title1_contact" style="font-size: 2vw;">Infos</h2>
+                <table class="mt-5">
+                    <tr id="tr_contact">
+                        <th class="title2_contact" style="font-size: 1vw;">Adresse :</th>
+                        <td class="paragraphe_contact" style="font-size: 1vw;">Clos Chapelle-aux-Champs 43</td>
+                    </tr>
+                    <tr style="height:30px">
+                        <th class="title2_contact" style="font-size: 1vw;">Numéro de téléphone :</th>
+                        <td class="paragraphe_contact" style="font-size: 1vw;">+32 2 761 06 08 <img src="img/Icone_tele.png" width="20" height="20" alt="icone de téléphone"></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div class="row justify-content-center">
+        <section class="m-5 col-sm-7">
+            <h2 class="title1_contact text-white" style="font-size: 2vw;">Plan</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0094994163637!2d4.448512776788055!3d50.84950835855057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc847580c1ef%3A0x5e73e51036fd3fca!2sClos%20Chapelle-aux-Champs%2043%2C%201200%20 Woluwe-Saint-Lambert!5e0!3m2!1sfr!2sbe!4v1700244835317!5m2!1sfr!2sbe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="m-3"></iframe>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="accueil.html">Accueil</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="menu.html">Menu</a>  
+                </p>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="prix_eros.html">Prix</a>
+                </p>
+            </li>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="avis_enes.html">Avis</a>  
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="reservation_raffaele.html">Réservation</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="apdn_emre.html">A propos de nous</a>
+                </p>
+            </li>
+            <li class="navbar-item">
+                <p style="font-size: 2vw;">
+                    <a class="nav-link text-white" href="contact_julien.html">Contact <img src="img/Icone_tele.png" id="tele_contact" alt="icone de téléphone"></a>
+                </p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
